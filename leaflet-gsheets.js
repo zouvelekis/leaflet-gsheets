@@ -23,9 +23,13 @@ window.addEventListener("DOMContentLoaded", init);
 // Create a new Leaflet map centered on the continental US
 var map = L.map("map").setView([40, -100], 4);
 
-var polygon = L.polygon([
-    [37.98477, 23.72792], [37.98432, 23.72876], [37.98324, 23.72846], [37.98341, 23.72699], [37.98438, 23.72680]
-]).addTo(mymap);
+var circle = L.circle([51.508, -0.11], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+}).addTo(mymap);
+
 
 // This is the Carto Positron basemap
 var basemap = L.tileLayer(
