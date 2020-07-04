@@ -50,7 +50,7 @@ var sidebar = L.control
     fillColor: '#f03',
     fillOpacity: 0.5,
     radius: 500
-}).addTo(mymap);
+}).addTo(map);
 
 
 let panelID = "my-info-panel";
