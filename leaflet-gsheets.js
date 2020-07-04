@@ -44,6 +44,14 @@ var sidebar = L.control
     position: "right"
   })
   .addTo(map);
+  
+  var circle = L.circle([37.98477, 23.72792], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+}).addTo(mymap);
+
 
 let panelID = "my-info-panel";
 var panelContent = {
@@ -196,15 +204,6 @@ function addPoints(data) {
       marker.setIcon(icon);
     }
   }
-  
-  var circle = L.circle([51.508, -0.11], {
-    color: 'red',
-    fillColor: '#f03',
-    fillOpacity: 0.5,
-    radius: 500
-}).addTo(mymap);
-
-
 }
 
 // Returns different colors depending on the string passed
